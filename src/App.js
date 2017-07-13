@@ -1,18 +1,14 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import NavBar from './ui/NavBar';
 
 class App extends Component {
   render() {
+    const logo = 'DevDeck101'
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>React & DevDeck101</h2>
-        </div>
-        <p className="App-intro">
-          Aqui está o nosso primeiro componente. Não se esqueça de se inscrever no canal.
-        </p>
+      <div className="container">
+        <NavBar logo={logo} />
       </div>
     );
   }
